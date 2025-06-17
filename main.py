@@ -5,9 +5,9 @@ import re
 import rasterio
 from PyQt5.QtWidgets import (
     QApplication, QWidget, QVBoxLayout, QHBoxLayout, QPushButton, QLabel,
-    QTextEdit, QFileDialog, QMessageBox, QScrollArea, QInputDialog
+    QTextEdit, QFileDialog, QMessageBox, QScrollArea, QInputDialog, QStyleFactory
 )
-from PyQt5.QtGui import QFont, QFontDatabase, QTextCursor, QTextCharFormat, QClipboard, QIcon
+from PyQt5.QtGui import QFont, QFontDatabase, QTextCursor, QTextCharFormat, QClipboard, QIcon, QColor, QPalette
 from PyQt5.QtCore import Qt, QTimer
 
 class OrthophotoTool(QWidget):
@@ -15,6 +15,20 @@ class OrthophotoTool(QWidget):
         super().__init__()
         self.setWindowTitle("Orthophoto Tool")
         self.setMinimumSize(800, 600)
+
+        # Set platform-specific style
+        if sys.platform == 'win32':
+            # Use Fusion style on Windows for a more modern look
+            QApplication.setStyle(QStyleFactory.create('Fusion'))
+            # Set a modern color palette
+            palette = QApplication.palette()
+            palette.setColor(QPalette.Window, QColor(240, 240, 240))
+            palette.setColor(QPalette.WindowText, QColor(0, 0, 0))
+            palette.setColor(QPalette.Base, QColor(255, 255, 255))
+            palette.setColor(QPalette.AlternateBase, QColor(245, 245, 245))
+            palette.setColor(QPalette.Button, QColor(240, 240, 240))
+            palette.setColor(QPalette.ButtonText, QColor(0, 0, 0))
+            QApplication.setPalette(palette)
 
         # Load custom font
         regular_font_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'assets', 'fonts', 'fccTYPO-Regular.ttf')
@@ -264,7 +278,7 @@ class OrthophotoTool(QWidget):
 
     def compile_output(self):
         if self.last_drone and self.last_gsd is not None and self.last_crs:
-            output = f"{self.last_drone} | GSD: {self.last_gsd} cm/px | CRS: {self.last_crs}"
+            output = f"DJI {self.last_drone} | GSD: {self.last_gsd} cm/px | CRS: {self.last_crs}"
         else:
             output = "(missing data, please process files first)"
         self.last_output = output
