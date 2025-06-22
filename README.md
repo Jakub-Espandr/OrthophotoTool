@@ -30,29 +30,21 @@ The Orthophoto Tool is designed to help users analyze and visualize metadata fro
 
 ---
 
-## 🚀 Installation
+## 🚀 Quick Start
 
 ```bash
+# Clone the repository
 git clone https://github.com/Jakub-Espandr/OrthophotoTool.git
 cd OrthophotoTool
-```
 
-Create a virtual environment (optional but recommended):
-
-```bash
+# (Optional) Create and activate a virtual environment
 python -m venv venv
 source venv/bin/activate    # On Windows: venv\Scripts\activate
-```
 
-Install required Python libraries:
-
-```bash
+# Install required dependencies
 pip install -r requirements.txt
-```
 
-Run the application:
-
-```bash
+# Run the application
 python main.py
 ```
 
