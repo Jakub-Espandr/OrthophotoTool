@@ -85,7 +85,7 @@ orthophoto-tool/
 ## 🔐 License
 
 This project is licensed under the **Non-Commercial Public License (NCPL v1.0)**  
-© 2025 Jakub Ešpandr - Born4FLight, FlyCamCzech
+© 2025 Jakub Ešpandr - Born4Flight, FlyCamCzech
 
 See the [LICENSE](https://github.com/Jakub-Espandr/OrthophotoTool/raw/main/LICENSE) file for full terms.
 ---
