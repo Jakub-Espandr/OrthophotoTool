@@ -33,7 +33,7 @@ The Orthophoto Tool is designed to help users analyze and visualize metadata fro
 ## 🚀 Installation
 
 ```bash
-git clone https://github.com/Jakub-Espandr/orthophoto-tool.git
+git clone https://github.com/Jakub-Espandr/OrthophotoTool.git
 cd orthophoto-tool
 ```
 
@@ -87,7 +87,7 @@ orthophoto-tool/
 This project is licensed under the **Non-Commercial Public License (NCPL v1.0)**  
 © 2025 Jakub Ešpandr - Born4FLight, FlyCamCzech
 
-See the [LICENSE](https://github.com/Jakub-Espandr/orthophoto-tool/raw/main/LICENSE) file for full terms.
+See the [LICENSE](https://github.com/Jakub-Espandr/OrthophotoTool/raw/main/LICENSE) file for full terms.
 ---
 
 ## 🙏 Acknowledgments
