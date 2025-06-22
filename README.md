@@ -71,7 +71,7 @@ python main.py
 ## 📁 Project Structure
 
 ```
-OrthophotoTooll/
+OrthophotoTool/
 ├── main.py                  # Entry point
 ├── assets/
 │   ├── icons/               # Application icons
