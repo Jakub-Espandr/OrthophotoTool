@@ -34,7 +34,7 @@ The Orthophoto Tool is designed to help users analyze and visualize metadata fro
 
 ```bash
 git clone https://github.com/Jakub-Espandr/OrthophotoTool.git
-cd orthophoto-tool
+cd OrthophotoTool
 ```
 
 Create a virtual environment (optional but recommended):
@@ -71,7 +71,7 @@ python main.py
 ## 📁 Project Structure
 
 ```
-orthophoto-tool/
+OrthophotoTooll/
 ├── main.py                  # Entry point
 ├── assets/
 │   ├── icons/               # Application icons
