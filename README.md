@@ -7,6 +7,13 @@
 <h1 align="center">Orthophoto Tool</h1>
 <p align="center"><em>(Born4Flight | FlyCamCzech | Jakub Ešpandr)</em></p>
 
+<p align="center">
+  <a href="https://ibb.co/1fdNgDXj">
+    <img src="https://i.ibb.co/wNwqk9Qj/Ortophoto-Tool.png" alt="UAV AreaCalc Ortophoto Tool Interface" width="50%"/>
+  </a>
+</p>
+
+
 ## Overview
 The Orthophoto Tool is designed to help users analyze and visualize metadata from TIFF and JSON files, particularly for drone imagery. It provides a user-friendly interface for loading, processing, and compiling metadata, making it easier to manage and interpret large datasets. One of its key features is the ability to calculate the Ground Sample Distance (GSD) resolution, which is crucial for understanding the spatial resolution of aerial imagery.
 
